@@ -32,7 +32,7 @@ var renderingFunc = function(){
   }
 
   function gameLoop() {
-    //kkm edit
+    //kd  edit
   //Loop this function at 60 frames per second
   requestAnimationFrame(gameLoop);
 
