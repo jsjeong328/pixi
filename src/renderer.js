@@ -15,12 +15,12 @@ var renderingFunc = function(){
   var stage = new PIXI.Container();
 
   //Tell the `renderer` to `render` the `stage`
-  PIXI.loader.add("../img/ship.png").load(setup);
+  PIXI.loader.add("ship.png").load(setup);
 
   var ship;
   function setup() {
     ship = new PIXI.Sprite(
-      PIXI.loader.resources["../img/ship.png"].texture
+      PIXI.loader.resources["ship.png"].texture
     );
 
     ship.x = 350;
