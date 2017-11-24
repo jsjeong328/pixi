@@ -1,4 +1,4 @@
-//var keyObject = keyboard(asciiKeyCodeNumber);
+
 function keyboard(keyCode) {
   var key = {};
   key.code = keyCode;
@@ -15,6 +15,7 @@ function keyboard(keyCode) {
     }
     event.preventDefault();
   };
+
   //The `upHandler`
   key.upHandler = function(event) {
     if (event.keyCode === key.code) {
