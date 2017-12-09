@@ -7,14 +7,19 @@ var movex_time;//가로 setInterval 함수 저장변수
 var movey_time;//세로 setInterval 함수 저장변수
 var x_on=0;//가로방향 키보드 눌림 감지
 var y_on=0;//세로방향 키보드 눌림 감지
+
+var savespace_key; // 스페이스 키
+var s_on = 0;
+
 var br_width=window.outerWidth; //브라우저 가로크기
 var br_height=window.innerHeight;//브라우저 세로크기
+
 document.onkeydown = onkey_press;
 document.onkyup = onkey_clear;
 
 function onkey_press(){
-			if(event.keyCode==37 || event.keyCode==39){
-				savex_key=event.keyCode;
+	if(event.keyCode==37 || event.keyCode==39){
+		savex_key=event.keyCode;
 				if(x_on!=1){
 					x_on=1;
 					movex_time=setInterval(keyx_move,1);
@@ -26,6 +31,13 @@ function onkey_press(){
 					y_on=1;
 					movey_time=setInterval(keyy_move,1);
 				}
+			}
+		}
+		else if(event.keyCode == 32){
+			savespace_key = event.keyCode;
+			if(s_on!=1){
+				s_on=1;
+				
 			}
 		}
 
@@ -71,4 +83,5 @@ function onkey_press(){
 					top_px=430;
 				}
 			}
+		//	div4.innerHTML=top_px;
 		}
