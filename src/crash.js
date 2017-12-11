@@ -7,6 +7,7 @@ function air_crash(a){
   clearTimeout(opst_movex_time3);
   clearTimeout(opst_movex_time4);
   clearTimeout(opst_movex_time5);
+  clearTimeout(opst_movex_time7);
   clearTimeout(game_point_init);
   our_airp=our_airp-1;
   game_count=0;
@@ -15,7 +16,6 @@ function air_crash(a){
   x_on=1;
   y_on=1;
   if(our_airp==0){
-   div3.innerHTML="Your Score is " + game_point + "!!";
    over_game();
   }
   else {
@@ -37,5 +37,6 @@ function our_airp_inve(){
   }
 }
 function over_game(){
+  div3.innerHTML="Your Score is " + game_point +"!!";
   div3.style.display="block";
 }
