@@ -13,7 +13,7 @@ if(!isset($_SESSION["uid"])){
     <div class="user-control-window">
       <div class="menu-title">MENU</div>
       <hr>
-      <a href="starWar.html">PLAY</a>
+      <a href="starWar.php">PLAY</a>
       <hr>
       <a href="scoreboard.php">SCORE BOARD</a>
     </div>
