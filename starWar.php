@@ -226,9 +226,6 @@
 			<div id="div1" onclick="start_game()" class="DIVN1">
 				START
 			</div>
-			<div id="div3" onclick="restart_game()" class="DIVN3">
-				GAME OVER! RESTART CLICK!
-			</div>
 			<div id="div4" class="DIVN4">
 				Space bar = Shoot
 			</div>
