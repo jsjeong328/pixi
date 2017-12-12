@@ -226,7 +226,10 @@
 			<div id="div1" onclick="start_game()" class="DIVN1">
 				START
 			</div>
-			<div id="div4" class="DIVN4">
+			<div id="div3" class="DIVN3">
+				0
+			</div>
+				<div id="div4" class="DIVN4">
 				Space bar = Shoot
 			</div>
 			<div id="div5" class="DIVN5">
