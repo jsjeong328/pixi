@@ -20,6 +20,10 @@ var br_height=window.innerHeight;//브라우저 세로크기
 document.onkeydown = onkey_press;
 document.onkyup = onkey_clear;
 
+$('#div1').on('click', function(){
+	start_game();
+});
+
 function onkey_press(){
 	if(event.keyCode==37 || event.keyCode==39){
 		savex_key=event.keyCode;
@@ -95,7 +99,7 @@ function onkey_clear(){
 		}
 	}
 }
-	
+
 	function keys_move(){
 	 	if(savespace_key==32){
 			document.styleSheets[0].rules[13].style.marginLeft=left_pxs+'px';

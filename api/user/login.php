@@ -7,7 +7,7 @@ if(isset($_POST["id"])){
   $stmt = $connect->prepare(
     'select uID, uPassword, HighScore from userinfo WHERE `uID` = :uid'
   );
-  $stmt->bindParam(':uid', $uid, PDO::PARAM_INT);
+  $stmt->bindParam(':uid', $uid, PDO::PARAM_STR);
 }
 
 $stmt->execute();

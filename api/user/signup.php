@@ -10,7 +10,7 @@ if(isset($_POST["id"]) && isset($_POST["password"])){
 
   //if validation check success
   $stmt = $connect->prepare('insert into userinfo(uID, uPassword, HighScore) VALUES(:uid, :upassword, 0)');
-  $stmt->bindParam(':uid', $uid, PDO::PARAM_INT);
+  $stmt->bindParam(':uid', $uid, PDO::PARAM_STR);
   $stmt->bindParam(':upassword', $upassword, PDO::PARAM_INT);
 }
 

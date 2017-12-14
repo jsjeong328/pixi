@@ -38,5 +38,11 @@ function our_airp_inve(){
 }
 function over_game(){
   div3.innerHTML="Your Score is " + game_point +"!!";
-  div3.style.display="block";
+  $.ajax({
+      type: 'post'
+    , url: '/~jjs/api/score/update.php'
+    , dataType: "json"
+    , data: {"score" : game_point}
+  });
+  // div3.style.display="block";
 }

@@ -1,9 +1,7 @@
 <html>
 	<head>
-	<script type='text/javascript' src="src/myAir.js"></script>
-	<script type='text/javascript' src="src/bug.js"></script>
-	<script type='text/javascript' src="src/crash.js"></script>
-  <link rel="stylesheet" type="text/css" href="css/StarWar.css">	
+  <link rel="stylesheet" type="text/css" href="css/StarWar.css">
+
 	</head>
 	<body>
   <div class="IMGN3">
@@ -26,7 +24,7 @@
 			<div id="div2" class="DIVN2">
 			0
 			</div>
-			<div id="div1" onclick="start_game()" class="DIVN1">
+			<div id="div1" class="DIVN1">
 				START
 			</div>
 			<div id="div3" class="DIVN3">
@@ -46,5 +44,8 @@
 			</div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type='text/javascript' src="src/myAir.js"></script>
+<script type='text/javascript' src="src/bug.js"></script>
+<script type='text/javascript' src="src/crash.js"></script>
 </body>
 </html>
