@@ -9,7 +9,7 @@ function air_crash(a){
   clearTimeout(opst_movex_time5);
   clearTimeout(opst_movex_time7);
   clearTimeout(game_point_init);
-  
+
   our_airp=our_airp-1;
   game_count=0;
   clearInterval(movex_time);
@@ -41,7 +41,7 @@ function over_game(){
   div3.innerHTML="Your Score is " + game_point +"!!";
   $.ajax({
       type: 'post'
-    , url: '/~jjs/api/score/update.php'
+    , url: 'api/score/update.php'
     , dataType: "json"
     , data: {"score" : game_point}
   });
