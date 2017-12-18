@@ -15,7 +15,7 @@ if(!isset($_SESSION["uid"])){
       <hr>
       <a href="starWar.php">PLAY</a>
       <hr>
-      <a href="scoreboard.php">SCORE BOARD</a>
+      <a href="api/score/show.php">SCORE BOARD</a>
     </div>
 
   </body>
