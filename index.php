@@ -9,7 +9,7 @@
         PASSWORD : <input name="password"> <p>
         <INPUT TYPE="submit"VALUE="LOGIN"> <P>
       </form>
-      <a href="signup.html">SIGNUP</a>
+      <a href="signup.php">SIGNUP</a>
     </div>
   </body>
 </html>

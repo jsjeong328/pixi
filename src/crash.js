@@ -9,9 +9,7 @@ function air_crash(a){
   clearTimeout(opst_movex_time5);
   clearTimeout(opst_movex_time7);
   clearTimeout(game_point_init);
-  //temporarily for test
-  our_airp=1;
-  //
+  
   our_airp=our_airp-1;
   game_count=0;
   clearInterval(movex_time);
